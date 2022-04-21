@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/style.css">
+     <title>Stone,Paper and Scissors</title>
+
+     <!-- <script defer src="./confetti.js"></script> -->
+     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+     <script defer src="./script.js"></script>
+
+</head>
+
+<body>
+     <div class="container">
+          <header>
+               <h1 class="heading">Rock, Paper and scissors</h1>
+          </header>
+          <div class="score-container">
+               <div class="scores">
+                    <h3 class="player">Player</h3>
+                    <span id="player-score" class="player-score">0</span>
+               </div>
+               <div class="scores">
+                    <h3 class="rounds">Rounds</h3>
+                    <span id="round" class="no-of-rounds">0</span>
+               </div>
+               <div class="scores">
+                    <h3 class="computer">Computer</h3>
+                    <span id="computer-score" class="computer-score">0</span>
+               </div>
+          </div>
+          <div class="game-container">
+               <div class="game-player">
+                    <img class="user-selection" id="rock" src="./images/img1.png" alt="">
+                    <img class="user-selection" id="paper" src="./images/img2.png" alt="">
+                    <img class="user-selection" id="scissor" src="./images/img3.png" alt="">
+               </div>
+               <div class="clicked-symbol">
+                    <img class="dummy" id="clicked-img-player" src="./images/user-circle-regular.svg" alt="">
+                    <div class="staus-submit">
+                         <div id="status">Select a symbol</div>
+                    </div>
+                    <!-- <button id="submit">Submit</button> -->
+                    <img class="dummy" id="clicked-img-computer" src="./images/laptop-solid.svg" alt="">
+               </div>    
+               <div class="game-computer">
+                    <img src="./images/img1.png" alt="">
+                    <img src="./images/img2.png" alt="">
+                    <img src="./images/img3.png" alt="">
+               </div>
+          </div>
+
+     </div>
+
+     <audio id="victory">
+          <source src="./sound/victory.mp3" type="audio/mp3">
+     </audio>
+     <audio id="lost">
+          <source src="./sound/fail.mp3" type="audio/mp3">
+     </audio>
+     <audio id="try-again">
+          <source src="./sound/tryAgain.mp3" type="audio/mp3">
+     </audio>
+
+</body>
+
+</html>
