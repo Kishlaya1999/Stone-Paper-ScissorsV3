@@ -10,7 +10,9 @@
 body {
      font-family: 'Roboto',
           sans-serif;
-     background-color: #dddddd;
+     // background-color: #dddddd;
+     // background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
      height: 100vh;
 }
 
@@ -25,13 +27,18 @@ body {
 .score-container {
      display: flex;
      justify-content: space-around;
-
+     border: 5px solid black;
+     border-radius: 20px;
+     margin: 10px;
      .scores {
           margin-top: 1.5rem;
           display: flex;
           flex-direction: column;
           // justify-content: center;
           align-items: center;
+          // border: 5px solid black;
+          // padding: 1%;
+          // border-radius: 10px;
 
           .player,
           .rounds,
@@ -66,12 +73,12 @@ body {
           flex-direction: column;
           // justify-content: center;
           align-items: center;
-
+          
           .user-selection {
                border: 5px solid #dddddd;
                cursor: pointer;
                transition: all 0.2s ease;
-
+               
                // overflow: hidden;
                &:hover {
                     // transform: scale(1.2);
@@ -79,11 +86,12 @@ body {
                }
           }
      }
-
+     
      img {
           border-radius: 50%;
           width: 135px;
           margin: 15px 0;
+          box-shadow: 0 0 20px black;
      }
 
      .clicked-symbol {
@@ -94,6 +102,7 @@ body {
 
           .dummy {
                border-radius: 0%;
+               box-shadow: none;
           }
 
           #submit {

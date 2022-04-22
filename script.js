@@ -53,7 +53,7 @@ function submit() {
      let paper = "./images/img2.png";
      let scissor = "./images/img3.png";
 
-     if (roundGoingOn <= 10) {
+     if (roundGoingOn <= 5) {
           if (userSelectedImage == rock) {
                if (computerSelectedImage == paper) {
                     computerScore++;

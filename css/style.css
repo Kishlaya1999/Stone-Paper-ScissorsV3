@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #dddddd;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #61baff 0%, #a6effd 90.1%);
   height: 100vh;
 }
 
@@ -25,6 +25,9 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border: 5px solid black;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .score-container .scores {
@@ -102,6 +105,8 @@ body {
   border-radius: 50%;
   width: 135px;
   margin: 15px 0;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
 }
 
 .game-container .clicked-symbol {
@@ -119,6 +124,8 @@ body {
 
 .game-container .clicked-symbol .dummy {
   border-radius: 0%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .game-container .clicked-symbol #submit {
