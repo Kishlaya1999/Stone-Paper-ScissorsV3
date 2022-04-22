@@ -113,7 +113,7 @@ function reset() {
 }
 
 function celebrate() {
-     var count = 500;
+     var count = 1000;
      var defaults = {
           origin: {
                y: 0.7
