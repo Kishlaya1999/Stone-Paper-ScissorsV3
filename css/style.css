@@ -56,6 +56,14 @@ body {
   font-size: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .score-container .scores .player-score,
+  .score-container .scores .no-of-rounds,
+  .score-container .scores .computer-score {
+    font-size: 2em;
+  }
+}
+
 .won {
   border: 5px solid green !important;
 }
@@ -109,6 +117,12 @@ body {
           box-shadow: 0 0 20px black;
 }
 
+@media screen and (max-width: 1024px) {
+  .game-container img {
+    width: 100px;
+  }
+}
+
 .game-container .clicked-symbol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,6 +163,12 @@ body {
   font-weight: 900;
 }
 
+@media screen and (max-width: 768px) {
+  .staus-submit #status {
+    font-size: 1.5rem;
+  }
+}
+
 .staus-submit #submit {
   border: none;
   font-size: 1.5rem;
@@ -170,17 +190,5 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .game-container {
-    margin: 0;
-  }
-}
-
-@media (max-width: 450px) {
-  .game-container img {
-    width: 75px;
-  }
-  .staus-submit #status {
-    font-size: 1rem;
   }
 }

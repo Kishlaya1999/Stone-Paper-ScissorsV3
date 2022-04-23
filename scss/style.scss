@@ -44,12 +44,16 @@ body {
           .rounds,
           .computer {
                font-size: 1.5rem;
-          }
 
+          }
+          
           .player-score,
           .no-of-rounds,
           .computer-score {
                font-size: 4rem;
+               @media screen and (max-width:768px) {
+                    font-size: 2em;
+               }
           }
      }
 }
@@ -92,6 +96,11 @@ body {
           width: 135px;
           margin: 15px 0;
           box-shadow: 0 0 20px black;
+
+          @media screen and (max-width:1024px) {
+               width: 100px;
+          }
+
      }
 
      .clicked-symbol {
@@ -123,6 +132,10 @@ body {
      #status {
           font-size: 2rem;
           font-weight: 900;
+
+          @media screen and (max-width:768px) {
+               font-size: 1.5rem;
+          }
      }
 
      #submit {
@@ -145,25 +158,23 @@ body {
           flex-direction: column;
      }
 
-     .game-container {
-          margin: 0;
-     }
+     
 }
 
-@media (max-width:450px) {
-     // body{
+// @media (max-width:450px) {
+//      // body{
 
-     //      transform: rotate(90deg);
-     // }
-     .game-container {
-          img {
-               width: 75px;
-          }
-     }
+//      //      transform: rotate(90deg);
+//      // }
+//      .game-container {
+//           img {
+//                // width: 75px;
+//           }
+//      }
 
-     .staus-submit {
-          #status {
-               font-size: 1rem;
-          }
-     }
-}
+//      .staus-submit {
+//           #status {
+//                font-size: 1rem;
+//           }
+//      }
+// }
